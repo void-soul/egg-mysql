@@ -1,0 +1,90 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe D:\Program Files\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\tool\Python27\;D:\tool\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\SlikSvn\bin;D:\tool\nvm;D:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\GNU\GnuPG;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\tool\nvm;C:\Program Files\nodejs;C:\Program Files\dotnet\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;d:\Program Files\Microsoft VS Code\bin;D:\tool\go\bin;D:\Program Files\Brackets\command;D:\Program Files\TortoiseGit\bin;D:\Program Files\Git\cmd;D:\tool\Python36\;D:\tool\Python36\Scripts;D:\Program Files\Apache Software Foundation\apache-maven-3.3.3\bin;D:\Program Files\Yarn\bin\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;%IntelliJ IDEA%;C:\Users\Administrator\AppData\Roaming\npm;D:\Program Files\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Local\Yarn\bin;D:\Program Files\Egret\Egret Wing 3\bin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.2.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/nyc/-/nyc-13.1.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (D:\Program Files\Yarn\lib\cli.js:129645:19)
+      at Object.onceWrapper (events.js:273:13)
+      at ClientRequest.emit (events.js:182:13)
+      at TLSSocket.emitTimeout (_http_client.js:706:34)
+      at Object.onceWrapper (events.js:273:13)
+      at TLSSocket.emit (events.js:182:13)
+      at TLSSocket.Socket._onTimeout (net.js:445:8)
+      at ontimeout (timers.js:427:11)
+      at tryOnTimeout (timers.js:289:5)
+      at listOnTimeout (timers.js:252:5)
+
+npm manifest: 
+  {
+    "name": "egg-mysql-ex",
+    "version": "3.0.0",
+    "description": "MySQL plugin for egg",
+    "eggPlugin": {
+      "name": "mysql"
+    },
+    "keywords": [
+      "egg",
+      "eggPlugin",
+      "egg-plugin",
+      "mysql",
+      "database"
+    ],
+    "dependencies": {
+      "ali-rds": "^3.0.1"
+    },
+    "devDependencies": {
+      "autod": "^3.0.1",
+      "egg": "latest-1",
+      "egg-bin": "^4.7.0",
+      "egg-ci": "^1.8.0",
+      "egg-mock": "^3.17.1",
+      "eslint": "^4.19.1",
+      "eslint-config-egg": "^7.0.0",
+      "supertest": "^3.1.0",
+      "utility": "^1.13.1"
+    },
+    "engines": {
+      "node": ">=6.0.0"
+    },
+    "scripts": {
+      "test": "npm run lint -- --fix && npm run test-local",
+      "test-local": "egg-bin test",
+      "cov": "egg-bin cov",
+      "lint": "eslint .",
+      "ci": "npm run lint && npm run cov",
+      "autod": "autod"
+    },
+    "ci": {
+      "version": "6, 8",
+      "license": true,
+      "services": "mysql"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/eggjs/egg-mysql.git"
+    },
+    "bugs": {
+      "url": "https://github.com/eggjs/egg/issues"
+    },
+    "homepage": "https://github.com/eggjs/egg-mysql#readme",
+    "author": "jtyjty99999",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
